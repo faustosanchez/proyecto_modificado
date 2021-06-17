@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+<body>
+    
+<div class="contenedor">
+    <div class="form-box">
+        <div class="button-box">
+            <div id="elegir"></div>
+                <button type="button" class="toggle-btn" onclick="Registro()">Registrar</button>
+               
+        </div>
+       <form action="registro.php" name="" method="POST">
+
+            <div id="Nombre">
+                <div class="GrupoIn">
+                    <input type="text" class="input-field" name="Nombre" placeholder="Nombre de Usuario" required>
+                <i class="estado-validación fas fa-times"></i>
+                </div>
+                <p class="input-error">El nombre de usuario debe ser de 4 a 9 digitos.</p>
+            </div>
+
+
+            <div id="Correo">
+                <div class="GrupoIn">
+                    <input type="email" class="input-field" name="Correo" placeholder="Correo electrónico" required>
+                <i class="estado-validación fas fa-times"></i>
+                </div>
+                <p class="input-error">Solo puede tener numeros, letras, puntos y guiones.</p>
+            </div>
+
+          
+            <div id="Contraseña">
+                <div class="GrupoIn">
+                    <input type="password" class="input-field" name="Contraseña" placeholder="Contraseña" required>
+                    <i class="estado-validación fas fa-times"></i>
+                </div>
+                <p class="input-error">La contraseña debe contener de 4 a 10 digitos</p>
+            </div>
+            
+
+            <div class="MensajeError" id="MensajeError">
+                <p><i class="fas fa-exclamation-circle"></i><b> Error: </b>Por favor, rellene el formulario correctamente.</p>
+            </div>
+            <div><button type="submit" class="submit-btn">Registrar</button></div>
+            
+        </form>
+    </div>
+</div>
+<script>
+    var x = document.getElementById("Login");
+    var y = document.getElementById("Registro");
+    var z = document.getElementById("elegir");
+
+    function Login(){
+        x.style.left = "50px";
+        y.style.left = "450px";
+        z.style.left = "0px";
+    }
+
+    function Registro(){
+        x.style.left = "-400px";
+        y.style.left = "50px";
+        z.style.left = "120px";
+    }
+</script>
+<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+</html>

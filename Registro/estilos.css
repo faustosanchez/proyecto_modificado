@@ -1,0 +1,150 @@
+
+    *{
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+    .contenedor{
+        height: 100%;
+        width: 100%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Cafeteria.jpeg);
+        background-position: center;
+        background-size: cover;
+        position:absolute;
+    }
+    
+    .form-box{
+        width: 370px;
+        height: 455px;
+        position: relative;
+        margin: 6% auto;
+        background: #fff;
+        padding: 5px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    
+    .button-box{
+        top: 30px;
+        width: 240px;
+        margin: 30px auto;
+        position: relative;
+        box-shadow: 0 0 20px 9px #e0e0e0;
+        border-radius: 30px;
+    
+    }
+    
+    .toggle-btn{
+        padding: 10px 22px;
+        cursor: pointer;
+        background: transparent;
+        border: 0px;
+        outline: none;
+        position: relative;
+    }
+    
+    #elegir{
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 120px;
+        height: 100%;
+        background: linear-gradient(to right, rgba(207, 103, 221, 0.7), rgba(144, 123, 230, 0.7));
+        border-radius: 30px;
+        transition: 0.8s;
+    
+    }
+    
+    .input-group{
+        top: 140px;
+        position: absolute;
+        width: 280px;
+        transition: 0.8s;
+    }
+    
+    .input-field{
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border-left: 0;
+        border-top: 0;
+        border-right: 0;
+        border-bottom: 2px solid #a6e7dc;
+        outline: none;
+        background: transparent;
+        transition: 0.3s ease all;
+    }
+    .submit-btn{
+        width: 85%;
+        padding: 10px 30px;
+        cursor: pointer;
+        display: block;
+        margin: auto;
+        background: linear-gradient(to right,  rgba(207, 103, 221, 0.7), rgba(144, 123, 230, 0.7));
+        border: 0px;
+        outline: none;
+        border-radius: 30px;
+    }
+    
+    #Login{
+        left: 50px;
+    }
+    
+    #Registro{
+        left: 450px;
+    }
+    
+    .input-error{
+        font-size: 12px;
+        margin-bottom: 0px;
+        display: none;
+    }
+    .input-error-activo{
+        display: block;
+    }
+    
+    .estado-validación{
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    z-index: 100;
+    font-size: 13px;
+    opacity: 0;
+    }
+    
+    .MensajeError{
+        grid-column: span 2;
+        height: 25px;
+        line-height: 10px;
+        background:#d496c0 ;
+        padding: 0 0px;
+        border-radius: 1px;
+        display: none;
+    }
+    
+    .MensajeError-activo{
+    display: block;
+    }
+    .MensajeError p {
+        margin: 0;
+    }
+    
+    .GrupoIn-correcto .estado-validación {
+        color:#96f18d;
+        opacity: 1;
+    
+    }
+    .GrupoIn-incorrecto .estado-validación {
+        color:#ffa6a6;
+        opacity: 1;
+    
+    }
+    
+    
+    
+    .GrupoIn{
+        position: relative;
+        
+    }
